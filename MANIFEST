@@ -1,6 +1,10 @@
-# vim: syntax=ruby
+# vim: ft=ruby
 
-FILES = {
-  './zshrc' => '~/.zshrc',
- './aliases.zsh' => '~/.zsh/aliases.zsh'
-}
+module ZshConfig
+
+  FILES = {
+    './zshrc' => '~/.zshrc',
+    './aliases.zsh' => '~/.zsh/aliases.zsh'
+  }
+
+end
