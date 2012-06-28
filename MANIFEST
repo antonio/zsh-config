@@ -1,0 +1,6 @@
+# vim: syntax=ruby
+
+FILES = {
+  './zshrc' => '~/.zshrc',
+ './aliases.zsh' => '~/.zsh/aliases.zsh'
+}
