@@ -4,6 +4,8 @@ module ZshConfig
 
   FILES = {
     './zshrc' => '~/.zshrc',
+    './zshenv' => '~/.zshenv',
+    './zprofile' => '~/.zprofile',
     './aliases.zsh' => '~/.zsh/aliases.zsh'
   }
 
