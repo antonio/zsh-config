@@ -6,7 +6,8 @@ module ZshConfig
     './zshrc' => '~/.zshrc',
     './zshenv' => '~/.zshenv',
     './zprofile' => '~/.zprofile',
-    './aliases.zsh' => '~/.zsh/aliases.zsh'
+    './aliases.zsh' => '~/.zsh/aliases.zsh',
+    './keys.zsh' => '~/.zsh/keys.zsh',
   }
 
 end
