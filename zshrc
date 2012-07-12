@@ -8,12 +8,12 @@ autoload -U colors && colors
 # completion system
 autoload -U compinit && compinit
 # history
+export HISTFILE=$HOME/.zsh_history
 export SAVEHIST=2000
-#export HISTFILE=$HOME/.zsh_history
-setopt HIST_IGNORE_ALL_DUPS
-setopt HIST_IGNORE_SPACE
-setopt INC_APPEND_HISTORY
-setopt SHARE_HISTORY
+setopt hist_ignore_all_dups
+setopt hist_ignore_space
+setopt inc_append_history
+setopt share_history
 
 set -o emacs
 
