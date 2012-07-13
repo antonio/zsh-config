@@ -17,4 +17,4 @@ setopt share_history
 
 set -o emacs
 
-[[ -z $TMUX ]] && tmux
+[[ -n $DISPLAY ]] && [[ -z $TMUX ]] && tmux
