@@ -1,0 +1,5 @@
+---
+zshrc: ~/.zshrc
+zprofile: ~/.zprofile
+aliases.zsh: ~/.zsh/aliases.zsh
+keys.zsh: ~/.zsh/keys.zsh
