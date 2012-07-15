@@ -16,5 +16,5 @@ setopt inc_append_history
 setopt share_history
 
 set -o emacs
-
+export PS1="%m%k %B%F{cyan}%(4~|...|)%3~%F{white} %# %b%f%k"
 [[ -n $DISPLAY ]] && [[ -z $TMUX ]] && tmux
