@@ -11,10 +11,10 @@ autoload -U compinit && compinit
 # history
 export HISTFILE=$HOME/.zsh_history
 export SAVEHIST=2000
-setopt hist_ignore_all_dups
-setopt hist_ignore_space
-setopt inc_append_history
-setopt share_history
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_IGNORE_SPACE
+setopt INC_APPEND_HISTORY
+setopt SHARE_HISTORY
 
 set -o emacs
 export PS1="%m%k %B%F{cyan}%(4~|...|)%3~%F{white} %# %b%f%k"
