@@ -1,5 +1,6 @@
 source ~/.zsh/aliases.zsh
 source ~/.zsh/keys.zsh
+source ~/.zsh/rbenv.zsh
 
 # prompts and themes
 autoload -U promptinit && promptinit
