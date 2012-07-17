@@ -5,9 +5,10 @@ autoload -U promptinit && promptinit
 autoload -U colors && colors
 
 # completion system
-autoload -U compinit
-#fpath=(~/.zsh/zsh-completions $fpath)
-compinit
+autoload -U compinit && compinit
+
+# zmv
+autoload -U zmv
 
 set -o emacs
 
