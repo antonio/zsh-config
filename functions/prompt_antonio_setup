@@ -1,0 +1,7 @@
+prompt_antonio_setup () {
+  setopt noxtrace localoptions
+  PROMPT="%B%F{cyan}%~%F{white} %# %b%f%k"
+}
+
+prompt_antonio_setup
+

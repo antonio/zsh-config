@@ -9,3 +9,4 @@ modules/zsh-history-substring-search/zsh-history-substring-search.zsh: ~/.zsh/zs
 modules/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh: ~/.zsh/zsh-syntax-highlighting.zsh
 modules/zsh-syntax-highlighting/highlighters: ~/.zsh/highlighters
 modules/zsh-completions: ~/.zsh/zsh-completions
+functions: ~/.zsh/functions

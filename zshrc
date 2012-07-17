@@ -1,4 +1,5 @@
 # prompts and themes
+fpath=(~/.zsh/functions $fpath)
 autoload -U promptinit && promptinit
 
 # colors
@@ -11,8 +12,6 @@ autoload -U compinit && compinit
 autoload -U zmv
 
 set -o emacs
-
-export PS1="%B%F{cyan}%~%F{white} %# %b%f%k"
 
 # history
 export HISTFILE=$HOME/.zhistory
