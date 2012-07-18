@@ -2,6 +2,8 @@
 fpath=(~/.zsh/functions $fpath)
 autoload -U promptinit && promptinit
 
+prompt antonio
+
 # colors
 autoload -U colors && colors
 
