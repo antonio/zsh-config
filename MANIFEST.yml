@@ -1,6 +1,6 @@
 ---
 zshrc: ~/.zshrc
-zprofile: ~/.zprofile
+zshenv: ~/.zshenv
 aliases.zsh: ~/.zsh/aliases.zsh
 keys.zsh: ~/.zsh/keys.zsh
 rbenv.zsh: ~/.zsh/rbenv.zsh
