@@ -1,3 +1,3 @@
 export EDITOR=vim
-
-fpath=(~/.zsh/functions $fpath)
+export PATH=$HOME/.bin:$PATH
+fpath+=(~/.zsh/functions)
