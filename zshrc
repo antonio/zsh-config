@@ -1,12 +1,29 @@
 # prompts and themes
-autoload -U promptinit && promptinit
-prompt antonio
+autoload -Uz promptinit
+setopt promptsubst
+promptinit
 
 # colors
 autoload -U colors && colors
 
 # completion system
 autoload -U compinit && compinit
+
+# vcsinfo stuff
+autoload -Uz vcs_info
+add-zsh-hook precmd vcs_info
+zstyle ':vcs_info:*' enable git
+zstyle ':vcs_info:*' check-for-changes true
+zstyle ':vcs_info:*' formats ' (%b) %u%c'
+zstyle ':vcs_info:*' actionformats ' (%b|%a) %u%c'
+zstyle ':vcs_info:*' unstagedstr 'U'
+zstyle ':vcs_info:*' stagedstr 'C'
+# IDEAS
+# - stash info
+# - periodic pulls ?
+# - tell if there have been changes upstream or we are ahead
+
+prompt antonio
 
 # zmv
 autoload -U zmv
@@ -25,7 +42,6 @@ setopt SHARE_HISTORY
 source ~/.zsh/aliases.zsh
 source ~/.zsh/keys.zsh
 source ~/.zsh/rbenv.zsh
-source ~/.zsh/git.zsh
 
 source ~/.zsh/zsh-history-substring-search.zsh
 export HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND="bg=black,fg=green"

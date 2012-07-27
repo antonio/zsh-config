@@ -5,7 +5,6 @@ zprofile: ~/.zprofile
 aliases.zsh: ~/.zsh/aliases.zsh
 keys.zsh: ~/.zsh/keys.zsh
 rbenv.zsh: ~/.zsh/rbenv.zsh
-git.zsh: ~/.zsh/git.zsh
 modules/zsh-history-substring-search/zsh-history-substring-search.zsh: ~/.zsh/zsh-history-substring-search.zsh
 modules/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh: ~/.zsh/zsh-syntax-highlighting.zsh
 modules/zsh-syntax-highlighting/highlighters: ~/.zsh/highlighters
