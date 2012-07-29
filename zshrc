@@ -16,8 +16,8 @@ zstyle ':vcs_info:*' enable git
 zstyle ':vcs_info:*' check-for-changes true
 zstyle ':vcs_info:*' formats " ($fg[magenta]%b$fg[white])%u%c%m"
 zstyle ':vcs_info:*' actionformats " ($fg[magenta]%b$fg[white]|$fg[yellow]%a$fg[white])%u%c%m"
-zstyle ':vcs_info:*' unstagedstr "$fg_no_bold[red]◼$fg[white] "
-zstyle ':vcs_info:*' stagedstr "$fg[green]◼ $fg[white]"
+zstyle ':vcs_info:*' unstagedstr " $fg_no_bold[red]◼$fg[white]"
+zstyle ':vcs_info:*' stagedstr " $fg[green]◼$fg[white]"
 zstyle ':vcs_info:git+set-message:*' hooks stash ahead
 
 +vi-stash() {
