@@ -7,7 +7,7 @@ zstyle ':vcs_info:*' formats " ($fg[magenta]%b$fg[white])%u%c%m"
 zstyle ':vcs_info:*' actionformats " ($fg[magenta]%b$fg[white]|$fg[yellow]%a$fg[white])%u%c%m"
 zstyle ':vcs_info:*' unstagedstr " $fg_no_bold[red]◼$fg[white]"
 zstyle ':vcs_info:*' stagedstr " $fg[green]◼$fg[white]"
-zstyle ':vcs_info:git+set-message:*' hooks stash ahead
+zstyle ':vcs_info:git+set-message:*' hooks stash ahead untracked
 
 +vi-stash() {
   if [[ -s ${hook_com[base]}/.git/refs/stash ]] ; then
@@ -16,9 +16,17 @@ zstyle ':vcs_info:git+set-message:*' hooks stash ahead
     hook_com[misc]+=" ($fg[yellow]stash$fg[white]:$fg[yellow]${stash}$fg[white])"
   fi
 }
+
 +vi-ahead() {
   ahead=$(git cherry 2>/dev/null | wc -l)
   if [[ $ahead -gt 0 ]] ; then
     hook_com[misc]+=" ($fg_bold[blue]ahead$fg[white])"
+  fi
+}
+
++vi-untracked() {
+  untracked=$(git status -s 2>/dev/null | grep '??' | grep -v grep | wc -l)
+  if [[ $untracked -gt 0 ]] ; then
+    hook_com[misc]+=" ($fg_bold[blue]untracked$fg[white])"
   fi
 }
