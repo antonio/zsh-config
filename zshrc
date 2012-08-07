@@ -25,6 +25,7 @@ setopt SHARE_HISTORY
 
 # ux
 export WORDCHARS='*?_-[]~=&;!#$%^(){}<>'
+setopt no_flowcontrol
 
 source ~/.zsh/aliases.zsh
 source ~/.zsh/keys.zsh
