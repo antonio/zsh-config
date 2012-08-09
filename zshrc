@@ -12,6 +12,11 @@ autoload -U compinit && compinit
 # zmv
 autoload -U zmv
 
+# run-help
+unalias run-help
+autoload -U run-help
+export HELPDIR=~/.zsh/help
+
 set -o emacs
 
 # history

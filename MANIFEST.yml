@@ -12,3 +12,4 @@ modules/zsh-syntax-highlighting/highlighters: ~/.zsh/highlighters
 modules/zsh-completions: ~/.zsh/zsh-completions
 modules/oh-my-zsh: ~/.zsh/oh-my-zsh
 functions: ~/.zsh/functions
+help: ~/.zsh/help
