@@ -23,10 +23,11 @@ set -o emacs
 export HISTFILE=$HOME/.zhistory
 export SAVEHIST=2000
 export HISTSIZE=2000
-setopt HIST_IGNORE_ALL_DUPS
-setopt HIST_IGNORE_SPACE
-setopt INC_APPEND_HISTORY
-setopt SHARE_HISTORY
+setopt extended_history
+setopt hist_ignore_all_dups
+setopt hist_ignore_space
+setopt inc_append_history
+setopt share_history
 
 # ux
 export WORDCHARS='*?_-[]~=&;!#$%^(){}<>'
