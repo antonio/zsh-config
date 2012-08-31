@@ -12,6 +12,10 @@ autoload -U compinit && compinit
 # zmv
 autoload -U zmv
 
+# directories
+setopt autocd
+export CDPATH=~/code:~/Projects
+
 # run-help
 unalias run-help
 autoload -U run-help
