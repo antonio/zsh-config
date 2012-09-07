@@ -33,6 +33,9 @@ setopt hist_ignore_space
 setopt inc_append_history
 setopt share_history
 
+# globbing
+setopt extended_glob
+
 # ux
 export WORDCHARS='*?_-[]~=&;!#$%^(){}<>'
 setopt no_flowcontrol
