@@ -7,6 +7,9 @@ export http_proxy="localhost:8118"
 export https_proxy="localhost:8118"
 export RUBY_GC_MALLOC_LIMIT=60000000
 export RUBY_FREE_MIN=200000
+export PAGER='less'
+export LESS='-R'
+export LESSOPEN='|colorize_script %s'
 
 fpath+=(~/.zsh/functions)
 path+=(~/.bin /opt/android-sdk/platform-tools)
