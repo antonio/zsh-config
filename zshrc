@@ -48,5 +48,7 @@ source ~/.zsh/functions.zsh
 
 prompt antonio
 
+export PATH=bin:$PATH
+
 [[ -n $DISPLAY ]] && [[ -z $TMUX ]] && tmux
 
