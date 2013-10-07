@@ -46,6 +46,8 @@ source ~/.zsh/rbenv.zsh
 source ~/.zsh/git.zsh
 source ~/.zsh/functions.zsh
 
+[[ -f "$HOME/.zshrc.local" ]] && source "$HOME/.zshrc.local"
+
 prompt antonio
 
 export PATH=bin:$PATH
