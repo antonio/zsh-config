@@ -4,7 +4,6 @@ zshenv: ~/.zshenv
 zprofile: ~/.zprofile
 aliases.zsh: ~/.zsh/aliases.zsh
 keys.zsh: ~/.zsh/keys.zsh
-rbenv.zsh: ~/.zsh/rbenv.zsh
 git.zsh: ~/.zsh/git.zsh
 functions.zsh: ~/.zsh/functions.zsh
 modules/zsh-history-substring-search/zsh-history-substring-search.zsh: ~/.zsh/zsh-history-substring-search.zsh

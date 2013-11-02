@@ -42,7 +42,6 @@ setopt no_flowcontrol
 
 source ~/.zsh/aliases.zsh
 source ~/.zsh/keys.zsh
-source ~/.zsh/rbenv.zsh
 source ~/.zsh/git.zsh
 source ~/.zsh/functions.zsh
 
