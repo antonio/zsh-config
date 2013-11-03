@@ -45,6 +45,8 @@ source ~/.zsh/keys.zsh
 source ~/.zsh/git.zsh
 source ~/.zsh/functions.zsh
 
+chruby ruby
+
 [[ -f "$HOME/.zshrc.local" ]] && source "$HOME/.zshrc.local"
 
 prompt antonio
