@@ -45,13 +45,13 @@ source ~/.zsh/keys.zsh
 source ~/.zsh/git.zsh
 source ~/.zsh/functions.zsh
 
-chruby ruby
-
 [[ -f "$HOME/.zshrc.local" ]] && source "$HOME/.zshrc.local"
 
 prompt antonio
 
 export PATH=bin:$PATH
+
+chruby ruby
 
 [[ -n $DISPLAY ]] && [[ -z $TMUX ]] && tmux
 
