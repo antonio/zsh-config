@@ -47,7 +47,9 @@ prompt antonio
 
 export PATH=bin:$PATH
 
-chruby ruby
+if $(which chruby > /dev/null); then
+  chruby ruby
+fi
 
 [[ -n $DISPLAY ]] && [[ -z $TMUX ]] && tmux
 
