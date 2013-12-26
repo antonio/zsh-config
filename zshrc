@@ -53,3 +53,4 @@ fi
 
 [[ -n $DISPLAY ]] && [[ -z $TMUX ]] && tmux
 
+printf '\033kshell\033\\'
