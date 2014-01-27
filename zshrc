@@ -53,4 +53,10 @@ fi
 
 [[ -n $DISPLAY ]] && [[ -z $TMUX ]] && tmux
 
-printf '\033kshell\033\\'
+if [[ -n $TMUX ]]; then
+  tmux display "#W"
+  window_name=$(tmux show-messages | tail -1 | cut -d' ' -f 6)
+  if [[ $window_name =~ "reattach" ]]; then
+    printf '\033kshell\033\\'
+  fi
+fi
