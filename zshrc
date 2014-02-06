@@ -55,7 +55,7 @@ fi
 
 if [[ -n $TMUX ]]; then
   tmux display "#W"
-  window_name=$(tmux show-messages | tail -1 | cut -d' ' -f 6)
+  window_name=$(tmux show-messages | tail -1 | awk '{print $6}')
   if [[ $window_name =~ "reattach" ]]; then
     printf '\033kshell\033\\'
   fi
