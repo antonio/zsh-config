@@ -10,4 +10,4 @@ export LESS='-XR'
 export LESSOPEN='|colorize_script %s'
 
 fpath+=(~/.zsh/functions ~/.zsh/zsh-completions)
-path+=(~/.bin /usr/local/heroku/bin /opt/android-sdk/platform-tools)
+path+=(./bin ~/.bin /usr/local/bin)

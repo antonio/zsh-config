@@ -12,6 +12,9 @@ autoload -U compinit && compinit
 # zmv
 autoload -U zmv
 
+# path
+typeset -U PATH
+
 # run-help
 unalias run-help
 autoload -U run-help
@@ -44,8 +47,6 @@ source ~/.zsh/functions.zsh
 [[ -f "$HOME/.zshrc.local" ]] && source "$HOME/.zshrc.local"
 
 prompt antonio
-
-export PATH=bin:$PATH
 
 if $(which chruby > /dev/null); then
   chruby ruby
