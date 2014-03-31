@@ -13,3 +13,7 @@ man() {
 emacsd() {
   emacs --daemon=$1
 }
+
+emacsc() {
+  emacsclient -c -s $1 &
+}
