@@ -1,4 +1,4 @@
-export EDITOR=vim
+export EDITOR=emacs
 export DE=gnome
 export BROWSER=/usr/bin/chromium
 export _JAVA_AWT_WM_NONREPARENTING=1 # Fix Java for AwesomeWM
