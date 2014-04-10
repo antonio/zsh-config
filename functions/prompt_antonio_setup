@@ -1,8 +1,7 @@
 prompt_antonio_setup () {
   setopt noxtrace localoptions
   PROMPT='%B%F{cyan}%d%F{white} at %F{yellow}%m%F{white}${vcs_info_msg_0_}
-%b%f%k[%T] %# '
+%b%f%k%F{red}[%F{white}%T%F{red}] %# %F{white}'
 }
 
 prompt_antonio_setup
-
