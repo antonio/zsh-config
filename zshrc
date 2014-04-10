@@ -39,6 +39,9 @@ setopt extended_glob
 export WORDCHARS='*?_-[]~=&;!#$%^(){}<>'
 setopt no_flowcontrol
 
+# time commands that run for a long time
+export REPORTTIME=5
+
 source ~/.zsh/aliases.zsh
 source ~/.zsh/keys.zsh
 source ~/.zsh/git.zsh
