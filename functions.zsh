@@ -17,3 +17,7 @@ emacsd() {
 emacsc() {
   emacsclient -c -s $1 &
 }
+
+e() {
+  emacsclient -c -a '' $* &
+}
