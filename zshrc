@@ -46,6 +46,7 @@ source ~/.zsh/aliases.zsh
 source ~/.zsh/keys.zsh
 source ~/.zsh/git.zsh
 source ~/.zsh/functions.zsh
+source ~/.zsh/fasd.zsh
 
 [[ -f "$HOME/.zshrc.local" ]] && source "$HOME/.zshrc.local"
 

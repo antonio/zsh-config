@@ -6,6 +6,8 @@ aliases.zsh: ~/.zsh/aliases.zsh
 keys.zsh: ~/.zsh/keys.zsh
 git.zsh: ~/.zsh/git.zsh
 functions.zsh: ~/.zsh/functions.zsh
+fasd.zsh: ~/.zsh/fasd.zsh
 modules/zsh-completions: ~/.zsh/zsh-completions
+modules/fasd: ~/.zsh/fasd
 functions: ~/.zsh/functions
 help: ~/.zsh/help
