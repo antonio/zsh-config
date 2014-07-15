@@ -10,14 +10,6 @@ man() {
     man "$@"
 }
 
-emacsd() {
-  emacs --daemon=$1
-}
-
-emacsc() {
-  emacsclient -c -s $1 &
-}
-
 e() {
   emacsclient -c -a '' $* &
 }
