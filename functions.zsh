@@ -13,3 +13,7 @@ man() {
 e() {
   emacsclient -c -a '' $* &
 }
+
+fname() {
+  find . -name "*$**"
+}
