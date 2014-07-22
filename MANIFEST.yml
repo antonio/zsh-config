@@ -7,7 +7,9 @@ keys.zsh: ~/.zsh/keys.zsh
 git.zsh: ~/.zsh/git.zsh
 functions.zsh: ~/.zsh/functions.zsh
 fasd.zsh: ~/.zsh/fasd.zsh
+wakeonlan.zsh: ~/.zsh/wakeonlan.zsh
 modules/zsh-completions: ~/.zsh/zsh-completions
 modules/fasd: ~/.zsh/fasd
+modules/prezto/modules/wakeonlan: ~/.zsh/wakeonlan
 functions: ~/.zsh/functions
 help: ~/.zsh/help
