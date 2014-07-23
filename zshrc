@@ -6,9 +6,6 @@ promptinit
 # colors
 autoload -U colors && colors
 
-# completion system
-autoload -U compinit && compinit
-
 # zmv
 autoload -U zmv
 
@@ -56,6 +53,9 @@ prompt antonio
 if $(which chruby > /dev/null); then
   chruby ruby
 fi
+
+# completion system
+autoload -U compinit && compinit
 
 [[ -n $DISPLAY ]] && [[ -z $TMUX ]] && tmux
 
