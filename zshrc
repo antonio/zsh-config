@@ -60,8 +60,7 @@ autoload -U compinit && compinit
 [[ -n $DISPLAY ]] && [[ -z $TMUX ]] && tmux
 
 if [[ -n $TMUX ]]; then
-  tmux display "#W"
-  window_name=$(tmux show-messages | tail -1 | awk '{print $6}')
+  window_name=$(tmux display -p "#W")
   if [[ $window_name =~ "reattach" ]]; then
     printf '\033kshell\033\\'
   fi
