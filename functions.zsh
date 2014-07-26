@@ -17,3 +17,12 @@ e() {
 fname() {
   find . -name "*$**"
 }
+
+update-git-repos() {
+  cwd=$(pwd)
+  for dir in $(find -type d -name '.git'); do
+    cd ${dir}/..
+    git pull origin master
+    cd ${cwd}
+  done
+}
