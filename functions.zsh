@@ -18,6 +18,10 @@ fname() {
   find . -name "*$**"
 }
 
+update-submodules() {
+  git submodule foreach 'git pull origin master'
+}
+
 update-git-repos() {
   cwd=$(pwd)
   for dir in $(find -type d -name '.git'); do
