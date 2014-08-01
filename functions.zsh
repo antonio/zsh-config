@@ -30,3 +30,7 @@ update-git-repos() {
     cd ${cwd}
   done
 }
+
+tmux-rename-to-current() {
+  tmux renamew $(basename "$(pwd)")
+}

@@ -40,11 +40,11 @@ setopt no_flowcontrol
 export REPORTTIME=5
 
 source ~/.zsh/aliases.zsh
-source ~/.zsh/keys.zsh
 source ~/.zsh/git.zsh
 source ~/.zsh/functions.zsh
 source ~/.zsh/fasd.zsh
 source ~/.zsh/wakeonlan.zsh
+source ~/.zsh/keys.zsh
 
 [[ -f "$HOME/.zshrc.local" ]] && source "$HOME/.zshrc.local"
 
