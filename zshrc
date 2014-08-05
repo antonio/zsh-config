@@ -44,6 +44,7 @@ source ~/.zsh/git.zsh
 source ~/.zsh/functions.zsh
 source ~/.zsh/fasd.zsh
 source ~/.zsh/wakeonlan.zsh
+source ~/.zsh/dotenv.zsh
 source ~/.zsh/keys.zsh
 
 [[ -f "$HOME/.zshrc.local" ]] && source "$HOME/.zshrc.local"

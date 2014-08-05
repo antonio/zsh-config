@@ -8,6 +8,7 @@ git.zsh: ~/.zsh/git.zsh
 functions.zsh: ~/.zsh/functions.zsh
 fasd.zsh: ~/.zsh/fasd.zsh
 wakeonlan.zsh: ~/.zsh/wakeonlan.zsh
+dotenv.zsh: ~/.zsh/dotenv.zsh
 modules/zsh-completions: ~/.zsh/zsh-completions
 modules/fasd: ~/.zsh/fasd
 modules/prezto/modules/wakeonlan: ~/.zsh/wakeonlan
