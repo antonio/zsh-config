@@ -34,3 +34,12 @@ update-git-repos() {
 tmux-rename-to-current() {
   tmux renamew $(basename "$(pwd)")
 }
+
+bak() {
+  cp -ri $1{,.bak}
+}
+
+unbak() {
+  cp -ri $1{.bak,}
+  rm -ri $1.bak
+}
