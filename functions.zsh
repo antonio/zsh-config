@@ -43,3 +43,7 @@ unbak() {
   cp -ri $1{.bak,}
   rm -ri $1.bak
 }
+
+create-emacs-project() {
+  echo "((nil . ((default-directory . \"$(pwd)\"))))" >> .dir-locals.el
+}
