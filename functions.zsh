@@ -45,5 +45,6 @@ unbak() {
 }
 
 create-emacs-project() {
-  echo "((nil . ((default-directory . \"$(pwd)\"))))" >> .dir-locals.el
+  echo "((nil . ((default-directory . \"$(pwd)\"))))" > .dir-locals.el
+  git ignore .dir-locals.el
 }
