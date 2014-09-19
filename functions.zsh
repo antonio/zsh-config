@@ -48,3 +48,5 @@ create-emacs-project() {
   echo "((nil . ((default-directory . \"$(pwd)\"))))" > .dir-locals.el
   git ignore .dir-locals.el
 }
+
+for f in $(ls $HOME/.zsh/functions); do autoload -Uz $f; done
