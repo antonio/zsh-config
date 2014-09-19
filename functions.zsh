@@ -49,4 +49,4 @@ create-emacs-project() {
   git ignore .dir-locals.el
 }
 
-for f in $(ls $HOME/.zsh/functions); do autoload -Uz $f; done
+for f in $(command ls $HOME/.zsh/functions); do autoload -Uz $f; done
