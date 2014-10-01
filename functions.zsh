@@ -44,9 +44,4 @@ unbak() {
   rm -ri $1.bak
 }
 
-create-emacs-project() {
-  echo "((nil . ((default-directory . \"$(pwd)\"))))" > .dir-locals.el
-  git ignore .dir-locals.el
-}
-
 for f in $(command ls $HOME/.zsh/functions); do autoload -Uz $f; done
