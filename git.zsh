@@ -30,3 +30,5 @@ zstyle ':vcs_info:git+set-message:*' hooks stash ahead untracked
     hook_com[misc]+=" ($fg_bold[blue]untracked$fg[white])"
   fi
 }
+
+export GIT_EDITOR="emacsclient -t -a ''"
