@@ -14,6 +14,10 @@ e() {
   emacsclient -c -a '' $* &
 }
 
+et() {
+  emacsclient -t -a '' $*
+}
+
 fname() {
   find . -name "*$**"
 }
