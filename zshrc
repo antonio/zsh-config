@@ -60,6 +60,8 @@ autoload -U compinit && compinit
 
 [[ -n $DISPLAY ]] && [[ -z $TMUX ]] && tmux
 
+eval $(gpg-agent --daemon)
+
 if [[ -n $TMUX ]]; then
   window_name=$(tmux display -p "#W")
   if [[ $window_name =~ "reattach" ]]; then
