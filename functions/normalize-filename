@@ -1,0 +1,6 @@
+#!/bin/bash
+
+filename=$1
+normalized_name=$(echo $1 | iconv -f utf8 -t ascii//TRANSLIT//IGNORE)
+
+mv $filename $normalized_name
